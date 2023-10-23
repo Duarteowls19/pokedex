@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=MedievalSharp&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(32,5,64,1) 26%, rgba(9,97,121,1) 59%, rgba(6,166,104,1) 100%, rgba(0,212,255,1) 100%);
+}
+.main{
+    margin: 20px auto;
+    max-width: 1100px;
+    background-color: rgb(123, 130, 131);
+   
+    text-align: center;
+    border-radius: 20px;
+}
+
+.main h2{
+    font-size: 45px;
+    color: rgb(0, 0, 0);
+    margin: 10px;
+    font-family: 'Electrolize', sans-serif;
+   
+}
+.main img{
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+
+}
+input{
+    width: 35%;
+    margin: 8px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+.pokemon-search{
+    transition: 2s;
+    margin: 10px;
+    width: 240px;
+    border-radius: 10px;
+    background-color: rgb(212, 200, 200);
+    flex-wrap: wrap;
+    display: inline-block;
+    text-align: center;
+}
+
+.pokemon-search img{
+    transition: 2;
+    width: 200px !important;
+}
+
+.pokemon-search p{
+    transition: 2;
+    color: black;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 25px;
+    padding: 10px;
+    font-family: 'Electrolize', sans-serif;
+    width: 200px !important;
+}
+
+.pokemon-search h3{
+    color: black;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 23px;
+    font-family: 'Electrolize', sans-serif;
+    width: 210px !important;
+}
+
+.pokemon-boxes{
+    width: 100%;
+    display: flex;
+    margin: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    
+
+}
+.pokemon-box-uni{
+    margin: 10px;
+    width: 29%;
+    border-radius: 10px;
+    overflow-wrap: break-word; 
+    background-color: rgb(212, 200, 200);
+}
+
+.pokemon-box-uni img{
+    width: 100%;
+}
+
+.pokemon-box-uni p{
+    color: black;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 25px;
+    padding: 10px;
+    font-family: 'Electrolize', sans-serif;
+}
+.error_p{
+    color: rgb(214, 59, 53);
+    transition: 2s;
+    background-color: rgb(212, 200, 200);
+    margin: 20px;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:720px) {
+    .pokemon-box-uni{
+        width: 80%;
+        text-align: center;
+    }
+    .pokemon-box-uni img {
+        max-width: 300px;
+    }
+}
